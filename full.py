@@ -5,7 +5,7 @@ from eth_account import Account
 web3 = Web3(Web3.HTTPProvider("https://ethereum-sepolia.publicnode.com"))
 
 # Sender's Private Key (NEVER expose in production)
-private_key = "0x1e2d0569d0a6b1c7160a02b18abca72cdac229f8be8d143298e90d824d4c9a31"
+private_key = "0x4b2856eaae9ae6e0dff34b7d95093fc97714631d3b4466a350d132a9f182258f"
 
 # Derive Sender's Address
 account = Account.from_key(private_key)
@@ -19,7 +19,7 @@ if balance < 0.002:  # Ensure enough balance for transaction + gas
     raise Exception("Insufficient balance! Get Sepolia ETH from a faucet.")
 
 # Define Recipient Address & Amount
-recipient_address = "0x53F866A0B939BdAa2DB49815CE5F3D006Fd068De"
+recipient_address = "0x1665a01616299e6b7e993f8eAE4cd75AD6E184ae"
 amount_eth = 0.001  # Amount to send in ETH
 amount_wei = web3.to_wei(amount_eth, "ether")
 

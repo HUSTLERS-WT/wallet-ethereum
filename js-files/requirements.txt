@@ -1,0 +1,4 @@
+npm install ethers
+node create-wallet.js
+npm install web3
+npm install web3 ethereumjs-wallet
