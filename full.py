@@ -5,7 +5,7 @@ from eth_account import Account
 web3 = Web3(Web3.HTTPProvider("https://ethereum-sepolia.publicnode.com"))
 
 # Sender's Private Key (NEVER expose in production)
-private_key = "0x4b2856eaae9ae6e0dff34b7d95093fc97714631d3b4466a350d132a9f182258f"
+private_key = "0x2034bba41b7dfc91b12d25d3a60b10b40ac139534202d643228e06802c0ab17c"
 
 # Derive Sender's Address
 account = Account.from_key(private_key)
@@ -19,7 +19,7 @@ if balance < 0.002:  # Ensure enough balance for transaction + gas
     raise Exception("Insufficient balance! Get Sepolia ETH from a faucet.")
 
 # Define Recipient Address & Amount
-recipient_address = "0x1665a01616299e6b7e993f8eAE4cd75AD6E184ae"
+recipient_address = "0x08335edd20C6c03754607664224B67e534FDf228"
 amount_eth = 0.001  # Amount to send in ETH
 amount_wei = web3.to_wei(amount_eth, "ether")
 
@@ -27,7 +27,7 @@ amount_wei = web3.to_wei(amount_eth, "ether")
 nonce = web3.eth.get_transaction_count(sender_address)
 
 # Lower Gas Price to Reduce Cost
-gas_price = web3.to_wei(2, "gwei")  # Manually set a lower gas price
+gas_price = web3.to_wei(25, "gwei")  # Manually set a lower gas price
 gas_limit = 21000  # Standard gas limit for ETH transfers
 
 # Construct Transaction

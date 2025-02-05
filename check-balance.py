@@ -7,7 +7,7 @@ from web3 import Web3
 web3 = Web3(Web3.HTTPProvider("https://ethereum-sepolia.publicnode.com"))
 
 # Replace with your Ethereum wallet address
-wallet_address = "0x1665a01616299e6b7e993f8eAE4cd75AD6E184ae"
+wallet_address = "0xe1d0526DcEb3F5Ed1518580470f477276D1adeEC"
 # wallet_address = "0x53F866A0B939BdAa2DB49815CE5F3D006Fd068De"
 
 # Get balance in Wei (1 ETH = 10**18 Wei)
